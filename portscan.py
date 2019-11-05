@@ -40,7 +40,7 @@ def check(port):
         pass
     return
 
-for i in range(0, 1200):
+for i in range(0, 65355):
     sys.stdout.write("\r[*] Checking Port: %s" % (i))
     thread = threading.Thread(target=check, args=(i,))
     thread.start()
